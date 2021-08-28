@@ -148,12 +148,12 @@ app.post("/delete" , function(req,res){
      res.render("about")
  })
 
-//  let port = process.env.PORT;
-//  if (port == null || port == "") {
-//    port = 3000;
-//  }
-//  app.listen(port);
+ let port = process.env.PORT;
+ if (port == null || port == "") {
+   port = 3000;
+ }
+ app.listen(port);
 
 
-app.listen(3000 , () => console.log("Server has started successfully.")
+app.listen(port , () => console.log("Server has started successfully.")
 );
